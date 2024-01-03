@@ -11,7 +11,7 @@ const banners = [
 export type TBanners = typeof banners;
 const HomePage = () => {
   return (
-    <main className="h-[5000px]">
+    <main>
       <div className="relative h-[305px] w-full overflow-hidden">
         <Carousel banners={banners} />
         <CategoryMenu />

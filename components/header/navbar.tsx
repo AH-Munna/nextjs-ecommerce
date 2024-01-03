@@ -1,4 +1,3 @@
-import { container } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 import { LuHeart, LuSearch, LuShoppingCart, LuUser2 } from "react-icons/lu";
@@ -6,7 +5,9 @@ import { Input } from "../ui/input";
 
 const Navbar = () => {
   return (
-    <div className={`${container} py-2 flex space-x-4 items-center bg-popover`}>
+    <div
+      className={`px-4 md:px-32 xl:px-60 py-2 flex space-x-4 items-center bg-popover`}
+    >
       {/* logo */}
       <Image src={"/logo.jpg"} alt="alzaf logo" width={100} height={100} />
       {/* search */}

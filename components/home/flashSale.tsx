@@ -1,4 +1,3 @@
-import { container } from "@/lib/data";
 import Link from "next/link";
 import { LuChevronRight } from "react-icons/lu";
 import ProductCards from "../ui/productCards";
@@ -54,7 +53,7 @@ export type TSaleItems = typeof SaleItems;
 
 const Flashsale = () => {
   return (
-    <div className={`${container}`}>
+    <div className={`px-4 md:px-32 xl:px-60`}>
       <SaleNav />
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 bg-popover p-4">
         {SaleItems.map((item) => {

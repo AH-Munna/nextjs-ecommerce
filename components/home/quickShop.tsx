@@ -1,4 +1,3 @@
-import { container } from "@/lib/data";
 import Link from "next/link";
 import { LuChevronRight, LuShoppingBasket } from "react-icons/lu";
 
@@ -31,7 +30,9 @@ const QuickShopItem = [
 ];
 const QuickShop = () => {
   return (
-    <div className={`flex my-4 justify-between space-x-2 ${container}`}>
+    <div
+      className={`flex my-4 justify-between space-x-2 px-4 md:px-32 xl:px-60`}
+    >
       {QuickShopItem.map((item, index) => (
         <Link
           href={item.link}
