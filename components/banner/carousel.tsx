@@ -13,7 +13,7 @@ const Carousel = ({ banners }: { banners: TBanners }) => {
         alt={banners[selected].title}
         width={1920}
         height={600}
-        className="w-full object-cover"
+        className="h-[305px] object-cover"
       />
       <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex space-x-0.5">
         {banners.map((_, index) => (
