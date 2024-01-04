@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 const Navbar = () => {
   return (
-    <div
+    <nav
       className={`px-4 md:px-32 xl:px-60 py-2 flex space-x-4 items-center bg-popover`}
     >
       {/* logo */}
@@ -25,7 +25,7 @@ const Navbar = () => {
       <Link href="#">
         <Image src={"/cloud-service.png"} alt="user" width={250} height={50} />
       </Link>
-    </div>
+    </nav>
   );
 };
 

@@ -7,7 +7,7 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alzaf Ecommerce",
+  title: "NextJS Ecommerce",
   description: "we ship everything",
 };
 
@@ -21,8 +21,10 @@ export default function RootLayout({
       <body
         className={`${nunito.className} bg-secondary text-secondary-foreground`}
       >
-        <NavInfo />
-        <Navbar />
+        <div className="hidden md:block">
+          <NavInfo />
+          <Navbar />
+        </div>
         {children}
       </body>
     </html>
