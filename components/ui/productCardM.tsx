@@ -1,11 +1,11 @@
-// product can be SEO friendly and "use client" isn't needed if heart/wishlist is from db
+// product card can be SEO friendly and "use client" isn't needed if heart/wishlist is from db
 "use client";
 import { TSaleItems } from "@/lib/data";
 import Image from "next/image";
 import { useState } from "react";
 import { LuHeart } from "react-icons/lu";
 
-const ProductCards = ({
+const ProductCardM = ({
   item,
   discount,
 }: {
@@ -23,11 +23,11 @@ const ProductCards = ({
             wishlisted ? "fill-background" : ""
           }`}
         />
-        <p className="absolute bottom-1 left-1 bg-primary text-primary-foreground px-2 rounded-sm text-xs">
+        <p className="absolute bottom-1 left-1 bg-primary text-primary-foreground px-2 rounded-sm">
           {discount}% off
         </p>
       </div>
-      <p className="font-semibold text-sm">{item.name}</p>
+      <p className="font-semibold text-base">{item.name}</p>
       <div className="flex space-x-2 mt-1 items-center">
         <p className="text-primary font-bold">
           ৳{" "}
@@ -35,7 +35,7 @@ const ProductCards = ({
             ? item.price - item.price * (discount / 100)
             : item.price}
         </p>
-        <p className="line-through text-sm">
+        <p className="line-through">
           {discount > 0 ? "৳ " + item.price * (discount / 100) : ""}
         </p>
       </div>
@@ -43,4 +43,4 @@ const ProductCards = ({
   );
 };
 
-export default ProductCards;
+export default ProductCardM;

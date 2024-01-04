@@ -2,7 +2,10 @@ import Carousel from "@/components/banner/desktop/carousel";
 import CategoryMenu from "@/components/banner/desktop/menu";
 import MobileBanner from "@/components/banner/mobile/hero";
 import Flashsale from "@/components/home/flashSale";
+import FlashSaleMobile from "@/components/home/flashSaleMobile";
 import QuickShop from "@/components/home/quickShop";
+import QuickshopMobile from "@/components/home/quickshopMobile";
+import SaleNav from "@/components/home/saleNav";
 
 const banners = [
   {
@@ -24,11 +27,11 @@ const banners = [
 export type TBanners = typeof banners;
 const HomePage = () => {
   return (
-    <main>
+    <main className="pb-10">
       <div className="hidden md:block">
         <Desktop />
       </div>
-      <div className="md:hidden">
+      <div className="md:hidden bg-secondary">
         <Mobile />
       </div>
     </main>
@@ -54,6 +57,9 @@ const Mobile = () => {
   return (
     <>
       <MobileBanner banners={banners} />
+      <QuickshopMobile />
+      <SaleNav />
+      <FlashSaleMobile />
     </>
   );
 };

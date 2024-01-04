@@ -1,33 +1,7 @@
+import { QuickShopItem } from "@/lib/data";
 import Link from "next/link";
 import { LuChevronRight, LuShoppingBasket } from "react-icons/lu";
 
-const QuickShopItem = [
-  {
-    name: "Mart",
-    icon: LuShoppingBasket,
-    link: "#",
-  },
-  {
-    name: "Fashion",
-    icon: LuShoppingBasket,
-    link: "#",
-  },
-  {
-    name: "Beauty & Glamour",
-    icon: LuShoppingBasket,
-    link: "#",
-  },
-  {
-    name: "Home Makeover",
-    icon: LuShoppingBasket,
-    link: "#",
-  },
-  {
-    name: "Free Delivery",
-    icon: LuShoppingBasket,
-    link: "#",
-  },
-];
 const QuickShop = () => {
   return (
     <div
