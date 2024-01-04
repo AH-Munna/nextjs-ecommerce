@@ -12,7 +12,7 @@ const FlashSaleMobile = () => {
           <SimpleCardM item={item} discount={saleDiscount} key={index} />
         ))}
       </div>
-      <LuChevronRight className="absolute top-1/2 -translate-y-1/2 right-2 text-foreground/30 w-10 h-10 p-2 bg-background/80 rounded-full hover:bg-background shadow-sm hover:shadow-md hover:shadow-foreground cursor-pointer" />
+      <LuChevronRight className="absolute top-1/2 -translate-y-1/2 right-2 text-foreground/30 w-10 h-10 p-2 bg-background/80 rounded-full hover:bg-background shadow-sm hover:shadow-md shadow-foreground cursor-pointer" />
     </div>
   );
 };
