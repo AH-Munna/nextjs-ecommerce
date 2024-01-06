@@ -19,7 +19,7 @@ const banners = [
     title: "Banner 2",
   },
   {
-    image: "/assets/banners/banner3.jpg",
+    image: "/assets/banners/banner3.png",
     imgSmall: "/assets/banners/m1.jpg",
     title: "Banner 3",
   },

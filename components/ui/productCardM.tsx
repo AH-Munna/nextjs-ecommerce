@@ -16,7 +16,13 @@ const ProductCardM = ({
   return (
     <div className="cursor-pointer hover:shadow-md hover:shadow-foreground transition-all duration-300 ease-in p-1 rounded-sm">
       <div className="relative">
-        <Image src={item.image} alt={item.name} width={300} height={300} />
+        <Image
+          src={item.image}
+          alt={item.name}
+          width={300}
+          height={300}
+          className="w-full object-cover"
+        />
         <LuHeart
           onClick={() => setWishlisted((prev) => !prev)}
           className={`absolute right-2 top-2 h-7 w-7 p-1 text-background rounded-full bg-foreground/40 ${
