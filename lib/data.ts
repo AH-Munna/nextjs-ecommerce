@@ -7,7 +7,7 @@ export const data = {
 
 export const QuickShopItem = [
   {
-    name: "Alzaf Mart",
+    name: "Dream Mart",
     icon: LuShoppingBasket,
     link: "#",
   },

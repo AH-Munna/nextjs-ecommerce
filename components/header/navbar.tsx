@@ -9,7 +9,7 @@ const Navbar = () => {
       className={`px-4 md:px-32 xl:px-60 py-2 flex space-x-4 items-center bg-popover`}
     >
       {/* logo */}
-      <Image src={"/logo.jpg"} alt="alzaf logo" width={100} height={100} />
+      <Image src={"/logo.png"} alt="ecommerce logo" width={100} height={100} />
       {/* search */}
       <div className="flex w-full items-center">
         <Input placeholder="Search Product" className="rounded-r-none" />
